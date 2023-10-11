@@ -1,5 +1,9 @@
 .section2 {
     background: #EDF7FA;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 38px;
 }
 
 .info-block {
@@ -9,4 +13,66 @@ box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
 width: 354px;
 height: 266px;
 margin-bottom: 17px;
+}
+
+.title-RP {
+   display: flex;
+   justify-content: center;
+    color: #21243D;
+font-family:'Heebo';
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px;
+}
+
+.text {
+    color:  #21243D;
+font-family: 'Heebo';
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+
+padding: 12px 8px 0px 19px;
+}
+
+.data-and-who {
+    display: flex;
+}
+
+.data {
+    color: var(--Dark-Color, #21243D);
+font-family: 'Heebo';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+padding-left: 18px;
+padding-right: 24px;
+
+border-right: solid 1px black;
+}
+
+.who {
+    color: var(--Dark-Color, #21243D);
+font-family: 'Heebo';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+padding-left: 24px;
+}
+
+.text-info {
+    color: var(--Dark-Color, #21243D);
+font-family: 'Heebo';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+padding: 19px 21px 22px 19px;
 }

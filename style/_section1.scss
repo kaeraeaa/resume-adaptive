@@ -1,17 +1,22 @@
 .img-john {
+   
     margin-left: 25%;
     margin-right: 25%;
+   
+
 }
 
 .title-john {
     color: var(--Dark-Color, #21243D);
     text-align: center;
-    font-family: Heebo;
+    font-family: 'Heebo';
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px; /* 125% */
     padding-top: 43px;
+
+
 }
 
 .text-john {
@@ -41,3 +46,4 @@
     border-radius: 2px;
     background: var(--Primary, #FF6464);
 }
+

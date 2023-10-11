@@ -25,7 +25,7 @@
                     <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
                 </svg>
             </span>
-            <p><ul>
+            <p><ul class="nav-list">
                 <li><a href="">Blog</a></li>
                 <li><a href="">Works</a></li>
                 <li><a href="">Contact</a></li>
@@ -42,25 +42,29 @@
         <div class="container">
             <img class="img-john" src="./img/Ellipse 1.jpg" alt="foto">
 
+            <div class="info-container">
             <h1 class="title-john">Hi, I am John,
                 Creative Technologist</h1>
                 <p class="text-john">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <button class="button" type="button">Download Resume</button>
+            </div>
         </div>
     </section>
 
     <section class="section2">
         <div class="container">
-            <h2>Recent posts</h2>
+            <h2 class="title-RP">Recent posts</h2>
             <div class="info-block">
                 <ul class="article-list">
                     <li>
                         <article>
-                            <h3>Making a design system from scratch</h3>
+                            <h3 class="text">Making a design system from scratch</h3>
                             <div>
-                                <p>12 Feb 2020</p>
-                                <p>Design, Pattern</p>
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <div class="data-and-who">
+                                <p class="data">12 Feb 2020</p>
+                                <p class="who">Design, Pattern</p>
+                            </div>
+                                <p class="text-info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                             </div>
                         </article>
                     </li>
@@ -68,11 +72,13 @@
                 <div class="info-block">
                     <li>
                         <article>
-                            <h3>Creating pixel perfect icons in Figma</h3>
+                            <h3 class="text">Creating pixel perfect icons in Figma</h3>
                             <div>
-                                <p>12 Feb 2020</p>
-                                <p>Figma,Icon Design</p>
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <div class="data-and-who">
+                                <p class="data">12 Feb 2020</p>
+                                <p class="who">Figma,Icon Design</p>
+                            </div>
+                                <p class="text-info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                             </div>
                         </article>
                     </li>
@@ -81,15 +87,17 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section3">
         <div class="container">
-            <h2>Featured works</h2>
+            <h2 class="title-FW">Featured works</h2>
             <img src="./img/Rectangle 30.jpg" alt="">
-            <h3>Designing Dashboards</h3>
+            <h3 class="text-dashboards">Designing Dashboards</h3>
             <div>
-                <p>2020</p>
-                <p>Dashboard</p>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="data-dashboards">
+                    <p class="data-2">2020</p>
+                    <p class="text-db">Dashboard</p>
+                </div>
+                <p class="text-info2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
         </div>
     </section>
@@ -120,7 +128,7 @@
                       </svg>
                 </li>
             </ul>
-            <p>Copyright ©2020 All rights reserved </p>
+            <p class="license">Copyright ©2020 All rights reserved </p>
         </div>
     </footer>
     <script src="./mobile-menu.js" type="module"></script>
