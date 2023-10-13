@@ -1,12 +1,16 @@
 .title-FW {
-    display: flex;
+    @media screen and (max-width: 767px) {
+        display: flex;
     justify-content: center;
+
+    }
     color: #21243D;
 font-family: 'Heebo';
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 60px;
+padding-top: 15px;
 }
 
 .text-dashboards {
@@ -53,9 +57,30 @@ color: white;
     line-height: normal;
 
     padding: 24px 0px 18px 0px;
+
+    @media screen and (min-width: 767px) {
+        width: 594px;
+    }
 }
 
 .section3 .container {
-    border-bottom: solid 1px #E0E0E0;
+    // border-bottom: solid 1px #E0E0E0;
     margin-bottom: 150px;
+
+    @media screen and (min-width: 767px) {
+        margin-left: 146px;
+    }
 }
+
+.info-card:not(:first-child) {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.info-card {
+    border-bottom: solid 1px #E0E0E0;
+    padding-top: 31px;
+    width: 858px;
+}
+

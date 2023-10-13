@@ -33,27 +33,32 @@ body {
   background-color: var(--background-color);
 }
 
-.section1 {
-  padding-top: 15px;
-  padding-bottom: 59px;
+@media screen and (max-width: 767px) {
+  .section1 {
+    padding-top: 15px;
+    padding-bottom: 59px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 375px;
+  }
 }
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 375px;
-}
-
 .img-john {
   margin-left: 25%;
   margin-right: 25%;
+}
+@media screen and (min-width: 767px) {
+  .img-john {
+    width: 243px;
+    height: 243px;
+  }
 }
 
 .title-john {
@@ -95,12 +100,42 @@ body {
   background: var(--Primary, #FF6464);
 }
 
+@media screen and (min-width: 767px) {
+  .section1 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 149px;
+    margin-right: 149px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .info-container {
+    width: 497px;
+    margin-bottom: 71px;
+  }
+}
+
 .section2 {
   background: #EDF7FA;
-  width: 375px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 38px;
+}
+@media screen and (max-width: 767px) {
+  .section2 {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .section2 {
+    width: 1152;
+  }
 }
 
 .info-block {
@@ -112,20 +147,43 @@ body {
   height: 266px;
   margin-bottom: 17px;
 }
+@media screen and (min-width: 767px) {
+  .info-block {
+    margin-right: 20px;
+  }
+}
 
 .title-RP {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #21243D;
   font-family: "Heebo";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 60px;
+}
+@media screen and (max-width: 767px) {
+  .title-RP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.title-VA {
+  color: #00A8CC;
+  text-align: right;
+  font-family: "Heebo";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 767px) {
+  .title-VA {
+    display: none;
+  }
 }
 
 .text {
@@ -176,19 +234,35 @@ body {
   padding: 19px 21px 22px 19px;
 }
 
+@media screen and (min-width: 767px) {
+  .container-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .title-FW {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #21243D;
   font-family: "Heebo";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 60px;
+  padding-top: 15px;
+}
+@media screen and (max-width: 767px) {
+  .title-FW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .text-dashboards {
@@ -233,10 +307,31 @@ body {
   line-height: normal;
   padding: 24px 0px 18px 0px;
 }
+@media screen and (min-width: 767px) {
+  .text-info2 {
+    width: 594px;
+  }
+}
 
 .section3 .container {
-  border-bottom: solid 1px #E0E0E0;
   margin-bottom: 150px;
+}
+@media screen and (min-width: 767px) {
+  .section3 .container {
+    margin-left: 146px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-card:not(:first-child) {
+    display: none;
+  }
+}
+
+.info-card {
+  border-bottom: solid 1px #E0E0E0;
+  padding-top: 31px;
+  width: 858px;
 }
 
 .svg-list {

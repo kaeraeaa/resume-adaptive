@@ -3,6 +3,10 @@
     margin-left: 25%;
     margin-right: 25%;
    
+    @media screen and (min-width: 767px) {
+        width: 243px;
+        height: 243px;
+    }
 
 }
 
@@ -47,3 +51,18 @@
     background: var(--Primary, #FF6464);
 }
 
+.section1 .container {
+    @media screen and (min-width: 767px) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 149px;
+        margin-right: 149px;
+    }
+}
+
+.info-container {
+    @media screen and (min-width: 767px) {
+        width: 497px;
+        margin-bottom: 71px;
+    }
+}
