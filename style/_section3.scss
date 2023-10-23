@@ -61,6 +61,10 @@ color: white;
     @media screen and (min-width: 767px) {
         width: 594px;
     }
+
+    @media screen and (max-width: 767px) {
+        width: 300px;
+    }
 }
 
 .section3 .container {
@@ -72,7 +76,7 @@ color: white;
     }
 }
 
-.info-card:not(:first-child) {
+.info-card-2, .info-card-3{
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -80,7 +84,10 @@ color: white;
 
 .info-card {
     border-bottom: solid 1px #E0E0E0;
+    @media screen and (min-width: 767px) {
+        
     padding-top: 31px;
     width: 858px;
+    }
 }
 

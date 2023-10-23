@@ -312,6 +312,11 @@ body {
     width: 594px;
   }
 }
+@media screen and (max-width: 767px) {
+  .text-info2 {
+    width: 300px;
+  }
+}
 
 .section3 .container {
   margin-bottom: 150px;
@@ -323,15 +328,19 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .info-card:not(:first-child) {
+  .info-card-2, .info-card-3 {
     display: none;
   }
 }
 
 .info-card {
   border-bottom: solid 1px #E0E0E0;
-  padding-top: 31px;
-  width: 858px;
+}
+@media screen and (min-width: 767px) {
+  .info-card {
+    padding-top: 31px;
+    width: 858px;
+  }
 }
 
 .svg-list {
