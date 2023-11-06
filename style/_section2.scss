@@ -22,8 +22,12 @@ width: 354px;
 height: 266px;
 margin-bottom: 17px;
 
+
+
 @media screen and (min-width: 767px) {
     margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 }
 
@@ -39,9 +43,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 60px;
 
-@media screen and (min-width: 767px) {
-    
-}
 }
 
 .title-VA {
@@ -59,7 +60,14 @@ line-height: normal;
 }
 
 .titles {
+   @media screen and (min-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    padding-left: 170px;
+    padding-right: 170px;
+   }
 }
 
 .text {

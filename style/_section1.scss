@@ -12,7 +12,7 @@
 
 .title-john {
     color: var(--Dark-Color, #21243D);
-    text-align: center;
+    
     font-family: 'Heebo';
     font-size: 32px;
     font-style: normal;
@@ -20,12 +20,18 @@
     line-height: 40px; /* 125% */
     padding-top: 43px;
 
+    width: 500px;
+    margin-left: 148px;
 
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        width: 312px;
+        margin-left: 0px;
+    }
 }
 
 .text-john {
     color: var(--Dark-Color, #21243D);
-    text-align: center;
     font-family: 'Heebo';
     font-size: 16px;
     font-style: normal;
@@ -33,11 +39,19 @@
     line-height: normal;
     padding-top: 21px;
     padding-bottom: 27px;
+
+    width: 500px;
+    margin-left: 148px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        width: 328px;
+        margin-left: 0px;
+    }
 }
 
 .button {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 148px;
     color: #FFF;
     font-family: 'Heebo';
     font-size: 20px;
@@ -49,6 +63,11 @@
     border: none;
     border-radius: 2px;
     background: var(--Primary, #FF6464);
+
+    @media screen and (max-width: 767px) {
+        margin-left: 20%;
+    margin-right: 20%;
+    }
 }
 
 .section1 .container {

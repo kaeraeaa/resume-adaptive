@@ -1,3 +1,28 @@
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.item-list {
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-bottom: 20px;
+}
+
+.a {
+  color: #000;
+  text-align: right;
+  font-family: "Heebo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,18 +88,25 @@ body {
 
 .title-john {
   color: var(--Dark-Color, #21243D);
-  text-align: center;
   font-family: "Heebo";
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 125% */
   padding-top: 43px;
+  width: 500px;
+  margin-left: 148px;
+}
+@media screen and (max-width: 767px) {
+  .title-john {
+    text-align: center;
+    width: 312px;
+    margin-left: 0px;
+  }
 }
 
 .text-john {
   color: var(--Dark-Color, #21243D);
-  text-align: center;
   font-family: "Heebo";
   font-size: 16px;
   font-style: normal;
@@ -82,11 +114,19 @@ body {
   line-height: normal;
   padding-top: 21px;
   padding-bottom: 27px;
+  width: 500px;
+  margin-left: 148px;
+}
+@media screen and (max-width: 767px) {
+  .text-john {
+    text-align: center;
+    width: 328px;
+    margin-left: 0px;
+  }
 }
 
 .button {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 148px;
   color: #FFF;
   font-family: "Heebo";
   font-size: 20px;
@@ -98,6 +138,12 @@ body {
   border: none;
   border-radius: 2px;
   background: var(--Primary, #FF6464);
+}
+@media screen and (max-width: 767px) {
+  .button {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -150,6 +196,8 @@ body {
 @media screen and (min-width: 767px) {
   .info-block {
     margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -171,6 +219,7 @@ body {
             justify-content: center;
   }
 }
+
 .title-VA {
   color: #00A8CC;
   text-align: right;
@@ -183,6 +232,22 @@ body {
 @media screen and (max-width: 767px) {
   .title-VA {
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 170px;
+    padding-right: 170px;
   }
 }
 
@@ -327,6 +392,12 @@ body {
   }
 }
 
+.info-card-2, .info-card-3 {
+  border-bottom: solid 1px #E0E0E0;
+  padding-top: 31px;
+  width: 858px;
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 767px) {
   .info-card-2, .info-card-3 {
     display: none;
@@ -340,6 +411,7 @@ body {
   .info-card {
     padding-top: 31px;
     width: 858px;
+    margin-bottom: 30px;
   }
 }
 

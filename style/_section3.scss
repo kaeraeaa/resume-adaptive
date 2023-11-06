@@ -77,6 +77,10 @@ color: white;
 }
 
 .info-card-2, .info-card-3{
+    border-bottom: solid 1px #E0E0E0;
+    padding-top: 31px;
+    width: 858px;
+    margin-bottom: 30px;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -88,6 +92,7 @@ color: white;
         
     padding-top: 31px;
     width: 858px;
+    margin-bottom: 30px;
     }
 }
 
